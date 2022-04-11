@@ -43,13 +43,33 @@ The slope of the linear model is not considered to be zero.
 
 The design specifications are respected for all manufacturing lots in total with a variance of 62.3 psi. In respect to lots, Lot 1 and Lot 2 adhere to the specs with their respective variances of 0.98 and 7.5 psi. Lot 3 does not adhere to specs with a variance of 170.3 psi.
 
-<br>
-
 ## Deliverable 3: T-Tests on Suspension Coils
 
-<p align="center"><img width="432" alt="ttest" src="https://user-images.githubusercontent.com/96352751/162644387-24ffd1a6-02dc-4325-a816-237b25244eab.png"></p>
+### T-Test all manifacturing lots against the population mean
 
-# FINISH THIS
+<p align="center"><img width="430" alt="global sample" src="https://user-images.githubusercontent.com/96352751/162657731-5e2f678b-1d63-40a9-be3e-174c3c62a43d.png">
+</p>
+  
+Our p-value of 0.9328 is above the common 0.05 percent, leading us to believe we do not have sufficient evidence to reject the null hypothesis. The PSI across all manufacturing lots is statistically similar to the population mean of 1498.78 psi.
+  
+### T-Test each manufacturing lot against the population mean
+  
+#### Lot1
+
+<p align="center"><img width="430" alt="lot1" src="https://user-images.githubusercontent.com/96352751/162657850-9a39f99d-c179-4aa7-b412-1d684ada9309.png">
+</p>
+
+The p-value is below 0.05 percent, indicating we may reject the null hypothesis and confirm that the PSI across Lot1 is statistically different from the population mean.
+
+#### Lot2
+<p align="center"><img width="430" alt="lot2" src="https://user-images.githubusercontent.com/96352751/162657942-721b6fbd-8fb0-47d5-8526-b6cbea2d6e6b.png">
+</p>
+
+#### Lot3
+<p align="center"><img width="430" alt="lot3" src="https://user-images.githubusercontent.com/96352751/162658023-07189d2c-94ce-4427-ada2-76f776ca47ae.png">
+ </p>
+ 
+Both p-values are above the significance level of 0.05 percent, leading us to believe that the PSI for Lot2 and Lot3 are statistically similar to the population mean.
 
 ## Deliverable 4: Design a Study Comparing the MechaCar to the Competition
 
@@ -66,7 +86,3 @@ Null hypothesis: each performance metric is statistically similar between the Me
 Using a one-way ANOVA test, we'd compare the means of a continuous numerical variable across a range of groups. This analysis would compare the means for each metric across different manufacturers.
 
 To perform this analysis, we would need data of MechaCar variables and it's competition compiledin a single dataframe where each metric is a column.The data would be scraped from vehicle data APIs such as [scrapinghub.com/data-api-vehicle] or other vehicle source APIs.
-
-
-
-
